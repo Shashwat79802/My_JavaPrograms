@@ -1,21 +1,18 @@
 package com.shashwat.Recursion;
 
-import java.util.*;
-
 class Sol {
     public static void main (String[] args) {  //9 7 6 15 17 5 10 11
 
-        System.out.print(pow(2, 3));
+        System.out.print(sumOfDigits(55505));
     }
 
-    static double pow(double x, int n) {
+    static int sumOfDigits (int n) {
 
-        if (n == 1)
-            return  x;
+        if (n == 0)
+            return 1;
 
-        return (x * pow(x, n-1));
+        return ((n%10) * sumOfDigits(n/10));
     }
-
 }
 
 
