@@ -1,4 +1,4 @@
-package com.shashwat.Recursion;
+package com.shashwat.Recursion.Sorting;
 
 //The program checks if the provided array is sorted or not.
 public class SortedArray

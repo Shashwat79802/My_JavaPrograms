@@ -1,4 +1,4 @@
-package com.shashwat.Recursion;
+package com.shashwat.Recursion.Searching;
 
 import com.sun.jdi.IntegerValue;
 
