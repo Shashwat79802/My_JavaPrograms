@@ -9,11 +9,12 @@ public class BinarySearch_2dArray
     public static void main (String[] args){
 
         int[][] arr = {
-                {1},
-                {3}
+                {1,  2,  3,  4},
+                {5,  6,  7,  8},
+                {10, 11, 12, 13}
         };
 
-        System.out.println(Arrays.toString(binarySearch_2dArray(arr, 0)));
+        System.out.println(Arrays.toString(binarySearch_2dArray(arr, 10)));
     }
 
     static int[] binarySearch_2dArray(int[][] arr, int target){
@@ -28,7 +29,7 @@ public class BinarySearch_2dArray
 
         while (rStart < rEnd - 1){
 
-            int mid = rStart + (rEnd + rStart) / 2;
+            int mid = rStart + (rEnd - rStart) / 2;
 
             if (arr[mid][cMid] == target){
                 return new int[] {mid, cMid};
@@ -56,14 +57,13 @@ public class BinarySearch_2dArray
 
         else
             return binarySearch(arr,target, rEnd, cMid+1, col-1);
-
     }
 
     static int[] binarySearch(int[][] arr, int target, int row, int cStart, int cEnd){
 
         while (cStart <= cEnd){
 
-            int mid = cStart + (cEnd - cStart)/2 ;
+            int mid = cStart + (cEnd - cStart) / 2;
 
             if (arr[row][mid] == target)
                 return new int[] {row, mid};
