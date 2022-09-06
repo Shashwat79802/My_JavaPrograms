@@ -4,7 +4,7 @@ public class InfiniteArray
 {
     public static void main(String[] args)
     {
-        int[] arr = {1,5,6,7,9,15,18,20,25,35,48,49,50,54,57,62,73,88,95,100,120,121,123};
+        int[] arr = {1,5,6,7,9,15,18,20,25,35,48,49,50,54,57,62,73,88,95,100,120,121,123,152,155,169};
         int target = 50;
 
         int ans = infinite_bs(arr, target);
